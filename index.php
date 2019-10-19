@@ -55,22 +55,26 @@ function get_n($a = NULL)
 
 function is_local()
 {
-    return (isset($_SERVER['SERVER_ADDR']) AND $_SERVER['SERVER_ADDR'] === '127.0.0.1');
+    return (isset($_SERVER['SERVER_ADDR']) AND in_array($_SERVER['SERVER_ADDR'], ['::1', '127.0.0.1']));
 }
 
 $r = '<!DOCTYPE html>';
 $r .= '<html dir="ltr" lang="en">';
 $r .= '<head>';
 $r .= '<meta charset="utf-8">';
+$r .= '<meta name="description" content="A question. By Alexander Christiaan Jacob, 2012.">';
+$r .= '<meta name="twitter:card" content="summary">';
+$r .= '<meta name="twitter:creator" content="@ACJ">';
+$r .= '<meta name="viewport" content="initial-scale=1.0, width=device-width">';
 $r .= '<meta property="fb:admins" content="509248955">';
-$r .= '<meta name="description" property="og:description" content="A question. By Alexander Christiaan Jacob, 2012.">';
+$r .= '<meta property="og:description" content="A question. By Alexander Christiaan Jacob, 2012.">';
 $r .= '<meta property="og:image" content="https://mimesia.net/apple-touch-icon.png">';
 $r .= '<meta property="og:title" content="Are you going to answer this question with yes or no?">';
 $r .= '<meta property="og:type" content="website">';
 $r .= '<meta property="og:url" content="https://areyougoingtoanswerthisquestionwithyesorno.com/">';
 $r .= '<title>Are you going to answer this question with yes or no?</title>';
 $r .= '<link rel="apple-touch-icon-precomposed" href="https://mimesia.net/apple-touch-icon.png">';
-$r .= '<link rel="author" href="https://alexanderchristiaanjacob.com/">';
+$r .= '<link rel="author" href="https://alexanderchristiaanjacob.com/" title="Alexander Christiaan Jacob">';
 $r .= '<link rel="canonical" href="https://areyougoingtoanswerthisquestionwithyesorno.com/">';
 $r .= '<link rel="shortcut icon" href="https://mimesia.com/favicon.ico">';
 $r .= '<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tulpen+One">';
