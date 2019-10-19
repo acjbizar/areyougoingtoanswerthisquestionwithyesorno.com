@@ -1,2 +1,1 @@
-# areyougoingtoanswerthisquestionwithyesorno.com
-Are you going to answer this question with yes or no?
+# Are you going to answer this question with yes or no?
