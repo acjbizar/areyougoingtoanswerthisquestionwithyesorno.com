@@ -103,6 +103,7 @@ $r .= '.a{display:block;font-size:9em;line-height:.75;padding:.375em .375em 0 .3
 $r .= '.active a{background:#000;color:#fff}';
 $r .= '.n{display:block;font-size:4.5em;line-height:.75;padding:.375em .375em 0 .375em}';
 $r .= '.three .no,.three .yes{width:25%}';
+$r .= '#a{height:50%}';
 $r .= '</style>';
 $r .= '</head>';
 $r .= '<body>';
